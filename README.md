@@ -15,7 +15,7 @@ Time:2022.10.17-2022.10.21
 4. Zaver 任意文件读取 ｜ CVE-2022-38794
 5. SolarView Compact 路径遍历漏洞 | CVE-2022-29298
 
-Time:2022.10.24-
+Time:2022.10.24-2022.10.28
 1. Fortinet 身份绕过漏洞 | CVE-2022-40684
 2. WordPress Welcart eCommerce插件 目录遍历（<=2.7.7) | CVE-2022-41840
 3. iMO-云办公室远程命令执行 | 暂无CVE
