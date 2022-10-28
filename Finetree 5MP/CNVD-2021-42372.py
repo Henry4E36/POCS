@@ -77,16 +77,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Finetree 5MP 摄像机任意用户添加')
     parser.add_argument("-u", "--url", type=str, metavar="url", help="Target url eg:\"http://127.0.0.1\"")
     parser.add_argument("-f", "--file", metavar="file", help="Targets in file  eg:\"ip.txt\"")
-    parser.add_argument("-t", "--thread", type=int, metavar="thread",help="set thread num ")
     args = parser.parse_args()
-    if len(sys.argv) != 5:
+    if len(sys.argv) != 3:
         print(
-            "[-]  参数错误！\neg1:>>>python3 CNVD-2021-42372.py -u http://127.0.0.1 -t 4\neg2:>>>python3 CNVD-2021-42372 -f ip.txt -t")
+            "[-]  参数错误！\neg1:>>>python3 CNVD-2021-42372.py -u http://127.0.0.1 \neg2:>>>python3 CNVD-2021-42372 -f ip.txt")
     elif args.url:
         information(args).target_url()
     elif args.file:
-        for i in range(args.thread):
-            thread = threading.Thread(name=f"t{i}",target= information(args).file_url,args=())
-            thread.start()   #启动线程
+        information(args).file_url()
 
         
