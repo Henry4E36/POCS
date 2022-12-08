@@ -26,9 +26,27 @@ Time:2022.10.24-2022.10.28
 8. OpenCats 跨站脚本攻击 ｜ CVE-2022-43017
 9. OpenCats 跨站脚本攻击 ｜ CVE-2022-43018
 
-Time:2022.10.31
+Time:2022.10.31-2022.11.4
 1. kkFileView 跨站脚本攻击 | CVE-2022-40879
 2. LabStack LLC echo SSRF漏洞 | CVE-2022-40083
 3. Atlassian Jira 身份验证绕过漏洞 | CVE-2022-39960
 4. WordPress BulletProof Security 插件 路径遍历漏洞 ｜ CVE-2021-39327
 5. Tenda 11n 身份绕过漏洞 | CVE-2022-42233
+
+Time:2022.11.7-11.11
+1. Free5gc 信息泄露漏洞 | CVE-2022-38870
+2. Dapr Dashboard 未授权访问 ｜ CVE-2022-38817
+3. CandidATS 跨站脚本攻击 ｜ CVE-2022-42479
+4. CandidATS 跨站脚本攻击 ｜ CVE-2022-42478
+5. CandidATS 跨站脚本攻击 ｜ CVE-2022-42477
+6. CandidATS 跨站脚本攻击 ｜ CVE-2022-42476
+
+Time:2022.11.14-11.18
+1. Academy Learning Management System 跨站脚本漏洞 ｜ CVE-2022-38553
+2. ServiceNow 跨站脚本漏洞 | CVE-2022-38463
+3. Shirne 目录遍历 | CVE-2022-37299
+4. Artica Proxy 跨站脚本漏洞 | CVE-2022-37153
+5. 
+
+Time: 2022.11.21-11.25
+1. 
