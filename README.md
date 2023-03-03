@@ -37,10 +37,10 @@ Time:2022.10.31-2022.11.4
 Time:2022.11.7-11.11
 1. Free5gc 信息泄露漏洞 | CVE-2022-38870
 2. Dapr Dashboard 未授权访问 ｜ CVE-2022-38817
-3. CandidATS 跨站脚本攻击 ｜ CVE-2022-42479
-4. CandidATS 跨站脚本攻击 ｜ CVE-2022-42478
-5. CandidATS 跨站脚本攻击 ｜ CVE-2022-42477
-6. CandidATS 跨站脚本攻击 ｜ CVE-2022-42476
+3. CandidATS 跨站脚本攻击 ｜ CVE-2022-42749
+4. CandidATS 跨站脚本攻击 ｜ CVE-2022-42748
+5. CandidATS 跨站脚本攻击 ｜ CVE-2022-42747
+6. CandidATS 跨站脚本攻击 ｜ CVE-2022-42746
 
 Time:2022.11.14-11.18
 1. Academy Learning Management System 跨站脚本漏洞 ｜ CVE-2022-38553
