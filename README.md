@@ -36,10 +36,10 @@ Time:2022.10.31-2022.11.4
 Time:2022.11.7-11.11
 1. Free5gc 信息泄露漏洞 | CVE-2022-38870
 2. Dapr Dashboard 未授权访问 ｜ CVE-2022-38817
-3. CandidATS 跨站脚本攻击 ｜ CVE-2022-42479
-4. CandidATS 跨站脚本攻击 ｜ CVE-2022-42478
-5. CandidATS 跨站脚本攻击 ｜ CVE-2022-42477
-6. CandidATS 跨站脚本攻击 ｜ CVE-2022-42476
+3. CandidATS 跨站脚本攻击 ｜ CVE-2022-42749
+4. CandidATS 跨站脚本攻击 ｜ CVE-2022-42748
+5. CandidATS 跨站脚本攻击 ｜ CVE-2022-42747
+6. CandidATS 跨站脚本攻击 ｜ CVE-2022-42746
 
 Time:2022.11.14-11.18
 1. Academy Learning Management System 跨站脚本漏洞 ｜ CVE-2022-38553
@@ -59,3 +59,10 @@ Time:2022.12.19
 
 Time:2023.03.01
 1. Joomla cms信息泄露 ｜ CVE-2023-23752
+
+Time:2023.03.24
+1. minio 信息泄漏 | CVE-2023-28432
+
+Time:2023.05.18
+1. 才贸通信 formping 命令执行 | 暂无CVE
+2. KubePi LoginLogsSearch 未授权访问漏洞 | CVE-2023-22478
