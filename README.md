@@ -62,12 +62,11 @@ Time:2023.03.01
 
 Time:2023.03.24
 1. minio 信息泄漏 | CVE-2023-28432
-<<<<<<< HEAD
 
 Time:2023.05.18
 1. 才贸通信 formping 命令执行 | 暂无CVE
 2. Metersphere file 任意文件下载漏洞 | CVE-2022-25573
 3. PowerJob list 信息泄漏漏洞 | CVE-2022-29923 
 4. KubePi LoginLogsSearch 未授权访问漏洞 | CVE-2023-22478
-=======
->>>>>>> b18084ece277857a2d608af209c5275f023a05b5
+
+
